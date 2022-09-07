@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.yellow{
+    /* background: rgb(255, 204, 0); */
+    background-image: url('../public/img/neon3.jpg');
+    height: 60vh;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    align-self: stretch;
+    z-index: -1;
+    bottom: 122px;
+    position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-article{
+    padding: 0 0 0 15vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1{
+    width: 20%;
+    font-size: 32px;
+    padding-bottom: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+h2{
+    color: #ffcc00;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p{
+    margin: 2vh 0;
 }
+
+button{
+    color: #ffa200;
+    border: 3px solid #ffcc00;
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 12px, 16px, 12px, 16px;
+    width: 120px;
+    height: 35px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+button:hover{
+    background-color: #ffcc00;
+    color: #ffff;
+    transition: 0.3s;
+}
+
+nav{
+    text-align: center;
+    padding: 5vh 5vw;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ************************* */
+/* containerSection */
+
+.blog-section {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5em;
+    align-content: center;
+    margin: 5vh 10vw;
+}
+
+img{
+    border-radius: 10px;
+    width: 280px;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+
